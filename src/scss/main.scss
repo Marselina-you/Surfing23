@@ -7,10 +7,7 @@
 // подключения компонентов страницы
 @import "./components/header";
 
+@import "./components/global";
+
 // тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+

@@ -2,11 +2,19 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "Fira-Sans", sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+
+  --fira-extrabold: 800 30px / 140% var(--font-family);
+  --fira-regular: 400 25px / 140% var(--font-family);
+  --fira-light: 300 30px / 140% var(--font-family);
+  --fira-thin: 100 30px / 140% var(--font-family);
+  --fira-medium: 500 30px / 140% var(--font-family);
+
+  --color-green: #4AF6CD;
 }
