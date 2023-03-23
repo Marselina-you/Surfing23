@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 100vh;
-  background-color: aqua;
+
 }
 .header__slider {
   height: 1000px;
@@ -20,8 +20,8 @@
     right: 80px;
     bottom: 116px;
     text-align: right;
-    text-transform: uppercase;
-    color: #fff;
+
+
 }
 .slider-item__info-subtitle {
   margin-bottom: 5px;
@@ -56,14 +56,14 @@
     right: 125px;
   }
 }
-.slider-dots {
-  //margin-
+.slider-dotshead {
+
   position: absolute;
   right: 50px;
   bottom: 36px;
   max-width: 920px;
   width: 100%;
-  color: #fff;
+
 
   .slick-current {
     .dots-box {
@@ -92,6 +92,7 @@
   &__name {
     font-weight: 300;
     font-size: 16px;
+    text-transform: capitalize;
   }
 }
 .header__aside {
@@ -102,7 +103,7 @@
   border-right: 1px solid rgba(#fff, .25);
   height: 100vh;
   text-align: center;
-  color: #FFFFFF;
+
 
 }
 .header__title {
@@ -114,15 +115,13 @@
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
-  text-transform: uppercase;
-  color: #fff;
   opacity: 0.07;
 }
 .menu {
   padding-top: 40px;
 
     a {
-      color: #fff;
+
 
       span {
         display: block;
@@ -130,6 +129,7 @@
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 3px;
+        text-transform: capitalize;
         padding-top: 6px;
         margin-bottom: 22px;
 
@@ -157,11 +157,13 @@
 .header__location {
   position: relative;
   display: inline-block;
+  padding-left: 19px;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 1.05px;
-  padding-left: 19px;
+  text-transform: capitalize;
+
 
   &::before {
     content: "";

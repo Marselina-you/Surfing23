@@ -8,18 +8,33 @@ $.when( $.ready ).then(function() {
     fade: true,
     prevArrow:  `<img class="slider-arrows slider-arrows__prev" src="img/arrows-prev.svg" alt=""></img>`,
     nextArrow:  `<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>`,
-    asNavFor: '.slider-dots',
+    asNavFor: '.slider-dotshead',
   });
 
-  $('.slider-dots').slick({
+  $('.slider-dotshead').slick({
 
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: '.header__slider',
     //dots: true,
+    focusOnSelect: true
 
-  focusOnSelect: true
 
+  });
+
+  $('.serf-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:  `<img class="slider-arrows slider-arrows__prev" src="img/arrows-prev.svg" alt=""></img>`,
+    nextArrow:  `<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>`,
+    asNavFor: '.slider-map',
+  });
+  $('.slider-map').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.serf-slider',
+    focusOnSelect: true
 
   });
 })

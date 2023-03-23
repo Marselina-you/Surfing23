@@ -7,10 +7,16 @@ html {
 *::after {
   box-sizing: inherit;
 }
+body {
+  background-color: #171919;
+  font-family: var(--font-family, sans-serif);
+  color: #fff;
+  text-transform: uppercase;
+}
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  //font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -30,6 +36,12 @@ img {
 
 a {
   text-decoration: none;
+  color: #fff;
+}
+.container-fluid {
+  overflow: hidden;
+  max-width: 1920px;
+  padding: 0;
 }
 
 .site-container {
