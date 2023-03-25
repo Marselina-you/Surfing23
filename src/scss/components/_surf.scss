@@ -1,8 +1,8 @@
-.serf {
-  padding: 160px 0 120px;
-  background-image: url(../img/serf-bg.svg);
-  background-position: top 200px;
+.surf {
+
+  background-image: url(../img/surf-bg.svg);
   background-repeat: no-repeat;
+  background-position: top 50px right 0;
   background-size: auto;
 
   &__subtitle {
@@ -13,7 +13,7 @@
   }
 
 }
-.serf-box {
+.surf-box {
 
   background-position: center;
   background-repeat: no-repeat;
@@ -29,14 +29,14 @@
     transition: all .3s ease-in-out;
     &:hover {
       background: rgba(#1c2121, .3);
-      .serf-box__inner-btn {
+      .surf-box__inner-btn {
         display: block;
       }
     }
 
   }
 }
-.serf-slider {
+.surf-slider {
   padding-top: 110px;
 
   .slider-arrows {
@@ -44,27 +44,27 @@
     opacity: 0.25;
   }
   .slick-slide:nth-child(4n + 1) {
-    .serf-box {
+    .surf-box {
       margin-top: 32px;
 
     }
   }
   .slick-slide:nth-child(4n + 3) {
-    .serf-box {
+    .surf-box {
       margin-top: 89px;
 
   }
   }
   .slick-current {
-    .serf-box__inner-btn {
+    .surf-box__inner-btn {
       display: block;
     }
-    .serf-box__inner {
+    .surf-box__inner {
       background: rgba(#1c2121, .3);
     }
   }
 }
-.serf-box__inner-title {
+.surf-box__inner-title {
   padding: 72px 0 0 40px;
   width: 140px;
   font-weight: 800;
@@ -72,7 +72,7 @@
   line-height: 36px;
 
 }
-.serf-box__inner-location {
+.surf-box__inner-location {
   position: absolute;
   left: 40px;
   bottom: 80px;
@@ -87,7 +87,7 @@
     font-weight: 100;
   }
 }
-.serf-box__inner-btn {
+.surf-box__inner-btn {
   position: absolute;
   bottom: 0;
   left: 0;

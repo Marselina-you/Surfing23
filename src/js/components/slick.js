@@ -22,7 +22,7 @@ $.when( $.ready ).then(function() {
 
   });
 
-  $('.serf-slider').slick({
+  $('.surf-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:  `<img class="slider-arrows slider-arrows__prev" src="img/arrows-prev.svg" alt=""></img>`,
@@ -33,10 +33,17 @@ $.when( $.ready ).then(function() {
     slidesToShow: 8,
     slidesToScroll: 1,
     arrows: false,
-    asNavFor: '.serf-slider',
+    asNavFor: '.surf-slider',
     focusOnSelect: true
 
   });
+
+  $('.travel__slider').slick({
+    infinite: true,
+    fade: true,
+    prevArrow:  `<img class="slider-arrows slider-arrows__prev" src="img/arrows-prev.svg" alt=""></img>`,
+    nextArrow:  `<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>`,
+  })
 })
 
 
