@@ -1,0 +1,112 @@
+.holder {
+  background-image: url(../img/holder-bg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  //margin-bottom: 300px;
+
+
+
+  .slider-arrows {
+    //top: 220px;
+    opacity: 1;
+  }
+
+  }
+  .holder-slider {
+    &__head {
+      background-repeat: no-repeat;
+      background-position: top left;
+      min-height: 780px;
+    }
+
+    &__descr {
+      margin-top: -230px;
+      padding-top: 160px;
+      padding-left: 132px;
+      min-height: 320px;
+      background-repeat: no-repeat;
+      background-position: right center;
+
+      .descr__head {
+        position: relative;
+        padding-right: 215px;
+        img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        .holder__star-list {
+          position: absolute;
+          top: 0;
+          right: 0;
+          li {
+            display: inline-block;
+            margin-left: -25px;
+
+          }
+          img {
+
+            position: static;
+
+          }
+        }
+      }
+
+
+    }
+
+    &__btn {
+      text-align: center;
+    }
+  }
+  .holder-slider__info {
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .holder-slider__info-item {
+    position: relative;
+    margin-bottom: 66px;
+    min-height: 200px;
+
+  }
+  .holder-slider__info-subtitle {
+    position: absolute;
+    top: 97px;
+    left: 97px;
+
+    width: 0;
+    height: 200px;
+    white-space: nowrap;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+  }
+  .holder-slider__info-title {
+    position: relative;
+    padding-left: 40px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+
+    .holder-pricing__span {
+      position: absolute;
+      bottom: -8px;
+      right: 0;
+      font-weight: 400px;
+      font-size: 14px;
+      line-height: 0;
+      letter-spacing: 5.25px;
+      opacity: 0.75;
+    }
+
+  }
+  .holder-slider-subtitle {
+    padding-right: 80px;
+    padding-top: 132px;
+    text-align: right;
+  }

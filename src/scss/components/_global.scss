@@ -8,7 +8,7 @@
   line-height: 32px;
   letter-spacing: 7.33333px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   opacity: 0.5;
 
   &::before {
@@ -143,12 +143,84 @@
 
   }
 }
-.surf,
-.travel {
-  padding: 160px 0 120px;
+
+.surf {
+  padding: 160px 0 160px 0;
 
 
 }
+
+.holder,
 .travel {
   padding-bottom: 265px;
+  margin-bottom: 35px;
+}
+
+
+.quantity {
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  //float: left;
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 36px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  top: 45px;
+
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  right: 0;
+
+
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 25px;
+
+
+
 }
