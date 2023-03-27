@@ -44,7 +44,7 @@ $.when( $.ready ).then(function() {
     prevArrow:  `<img class="slider-arrows slider-arrows__prev" src="img/arrows-prev.svg" alt=""></img>`,
     nextArrow:  `<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>`,
   });
-  $('.holder__slider').slick({
+  $('.holder__slider, .shop__slider').slick({
     infinite: true,
     fade: true,
 
@@ -84,7 +84,24 @@ $.when( $.ready ).then(function() {
     });
 
   });
-})
+
+  $('.quantity-button').on('click', function(){
+    let summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() - 1)* $('.summ').data('guests');
+    $('.summ').html('$' + summ);
+  })
+
+  let summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() - 1)* $('.summ').data('guests');
+  $('.summ').html('$' + summ);
+
+
+  $('.surfboard-box__circle').on('click', function() {
+
+    $(this).toggleClass('active');
+  });
+
+
+
+});
 
 
 

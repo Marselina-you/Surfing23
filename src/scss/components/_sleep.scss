@@ -1,5 +1,10 @@
 .holder {
-  background-image: url(../img/holder-bg.png);
+
+
+
+    background-image: url(../img/frangipani.png);
+
+
   background-position: bottom right;
   background-repeat: no-repeat;
   //margin-bottom: 300px;
@@ -26,10 +31,16 @@
       min-height: 320px;
       background-repeat: no-repeat;
       background-position: right center;
+      background-size: contain;
+
 
       .descr__head {
         position: relative;
-        padding-right: 215px;
+        padding-right: 68px;
+        &.descr__head-sleep {
+          padding-right: 215px;
+        }
+
         img {
           position: absolute;
           top: 0;
@@ -39,11 +50,7 @@
           position: absolute;
           top: 0;
           right: 0;
-          li {
-            display: inline-block;
-            margin-left: -25px;
 
-          }
           img {
 
             position: static;
