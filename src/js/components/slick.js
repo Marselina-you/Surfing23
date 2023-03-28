@@ -16,6 +16,7 @@ $.when( $.ready ).then(function() {
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: '.header__slider',
+
     //dots: true,
     focusOnSelect: true
 
@@ -99,7 +100,9 @@ $.when( $.ready ).then(function() {
     $(this).toggleClass('active');
   });
 
-
+$('.menu-btn').on('click', function() {
+  $('.menu').toggleClass('active');
+})
 
 });
 

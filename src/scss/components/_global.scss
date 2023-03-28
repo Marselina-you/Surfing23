@@ -2,7 +2,6 @@
   position: relative;
   display: inline-block;
   padding-left:  103px;
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
@@ -10,6 +9,14 @@
   text-transform: uppercase;
   color: #fff;
   opacity: 0.5;
+
+  @include for-desktop {
+    padding-left: 90px;
+    font-size: 16px;
+
+
+
+  }
 
   &::before {
     content: "";
@@ -19,6 +26,13 @@
     width: 80px;
     height: 1px;
     background-color: #fff;
+
+    @include for-desktop {
+
+      width: 50px;
+
+
+    }
 
   }
 }
@@ -35,6 +49,14 @@
   color: #FFFFFF;
   opacity: 0.5;
 
+  @include for-desktop {
+    padding-right: 90px;
+    font-size: 16px;
+
+
+
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -43,6 +65,13 @@
     width: 80px;
     height: 1px;
     background-color: #fff;
+
+    @include for-desktop {
+
+      width: 50px;
+
+
+    }
 
   }
 }
