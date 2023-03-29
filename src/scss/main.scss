@@ -5,6 +5,7 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/global";
 @import "./components/header";
 @import "./components/surf";
 @import "./components/travel";
@@ -12,7 +13,7 @@
 @import "./components/shop";
 @import "./components/footer";
 
-@import "./components/global";
+
 
 // тестовые стили, удалите их
 

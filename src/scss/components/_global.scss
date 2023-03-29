@@ -13,10 +13,11 @@
   @include for-desktop {
     padding-left: 90px;
     font-size: 16px;
+}
 
-
-
-  }
+@include mobile {
+  letter-spacing: 3px;
+}
 
   &::before {
     content: "";
@@ -28,11 +29,8 @@
     background-color: #fff;
 
     @include for-desktop {
-
       width: 50px;
-
-
-    }
+}
 
   }
 }
@@ -52,9 +50,11 @@
   @include for-desktop {
     padding-right: 90px;
     font-size: 16px;
-
-
-
+}
+  @include small-tablet {
+    font-size: 16px;
+    line-height: 18px;
+    padding-right: 65px;
   }
 
   &::before {
@@ -67,10 +67,7 @@
     background-color: #fff;
 
     @include for-desktop {
-
       width: 50px;
-
-
     }
 
   }
@@ -85,7 +82,12 @@
     font-size: 200px;
     color: rgba(#fff, 0.02);
 
-  }
+    @include small-tablet {
+      font-size: 100px;
+      padding-bottom: 80px;
+      padding-left: 10px;
+    }
+   }
   h3 {
     position: absolute;
     top: 0;
@@ -112,6 +114,12 @@
     font-weight: 800;
     font-size: 40px;
 
+    @include mobile {
+      font-size: 32px;
+      padding-right: 0;
+    }
+
+
     span {
       font-weight: 100;
     }
@@ -135,12 +143,18 @@
 
 
 
+
+
   }
 }
 .btn {
   font-weight: 800;
   font-size: 40px;
   line-height: 36px;
+
+  @include small-tablet {
+    font-size: 30px;
+  }
 
   span {
     position: relative;
@@ -176,13 +190,31 @@
 .surf {
   padding: 160px 0 160px 0;
 
+  @include small-tablet {
+    padding: 70px 0 50px;
+  }
+  @include hundred {
+    padding: 70px 0 50px;
+  }
 
+
+}
+.holder {
+  @include small-tablet {
+    padding: 70px 0 50px;
+  }
+  @include hundred {
+    padding: 70px 0 50px;
+  }
 }
 
 .holder,
 .travel {
   padding-bottom: 265px;
   margin-bottom: 35px;
+  @include small-tablet {
+    padding: 70px 0 50px;
+  }
 }
 
 
@@ -243,12 +275,25 @@ input[type=number]
   position: absolute;
   right: 0;
 
+  @include hundred {
+    right: auto;
+    left: 25px;
+
+    //
+  }
+
 
 }
 
 .quantity-button.quantity-down {
   position: absolute;
   right: 25px;
+  @include hundred {
+    right: auto;
+
+    margin-right: 10px;
+
+  }
 
 
 

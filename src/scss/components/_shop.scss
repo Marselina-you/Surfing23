@@ -12,9 +12,22 @@
 }
 .shop__slider {
   padding-left: 132px;
+
+  @include min-nout {
+    padding-left: 20px;
+  }
+  .descr {
+    @include hundred {
+      padding: 160px 0 0 0;
+
+    }
+  }
 }
 .shop__slider-inner {
   display: flex;
+  @include  min-nout {
+    display: block;
+  }
 
 }
 .shop__slider-info {
@@ -22,10 +35,19 @@
   width: 100%;
   margin-right: 40px;
   padding-top: 150px;
+
+  @include  min-nout {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
 }
 .descr__head-shop {
   max-width: 340px;
   margin-bottom: 47px;
+
+  @include hundred {
+    font-size: 32px;
+  }
 }
 .shop__star-list {
   margin-left: -9px;
@@ -36,6 +58,10 @@
   line-height: 40px;
   margin-bottom: 64px;
 
+  @include  min-nout {
+    margin-bottom: 30px;
+  }
+
   sup {
     font-size: 18px;
     padding-left: 2px;
@@ -43,14 +69,30 @@
 }
 .shop__extras {
   padding-left: 150px;
+
+  @include small-tablet {
+    padding-left: 0;
+    padding-top: 35px;
+
+  }
 }
 .shop__slider-content {
   padding-left: 170px;
   display: flex;
   align-items: flex-end;
+
+ @include nout {
+  padding-left: 40px;
+  }
+  @include small-tablet {
+    display: block;
+    padding-left: 0;
+  }
 }
 .shop__extras-inner {
   display: flex;
+
+
 
 }
 
@@ -64,6 +106,10 @@ line-height: 40px;
 .shop__extras-box {
   margin-right: 57px;
   text-align: center;
+
+  @include min-mobile {
+    margin-right: 10px;
+  }
   }
 .shop__extras-name {
   margin-bottom: 16px;
@@ -97,10 +143,23 @@ line-height: 40px;
 .surfboard__position--1 {
   top: 115px;
   right: 15px;
+
+
+  @include small-tablet {
+    left: 155px;
+    //top: 215;
+    .surfboard-box__content {
+      left: -146px;
+    }
+  }
 }
 .surfboard__position--2 {
   top: 185px;
-  left: 6px;
+  left: -6px;
+
+  @include small-tablet {
+    left: 3px;
+  }
 }
 .surfboard__position--3 {
  bottom: 40px;
@@ -122,6 +181,16 @@ line-height: 40px;
       height: 1px;
       background-color: #fff;
 
+      @include min-nout {
+        right: auto;
+        left: -32px;
+        width: 20px;
+
+      }
+
+    }
+    @include min-nout {
+      left: 60px;
     }
   }
 }
@@ -179,11 +248,18 @@ line-height: 40px;
   top: -15px;
   left: 40px;
   width: 359px;
-  font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 24px;
   padding-left: 104px;
+
+  @include small-tablet {
+    top: 35px;
+    padding-left: 0;
+    width: 270px;
+    font-weight: 400;
+    font-size: 20px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -192,6 +268,10 @@ line-height: 40px;
     width: 80px;
     height: 1px;
     background-color: #fff;
+
+    @include small-tablet {
+      display: none;
+    }
 
   }
 
