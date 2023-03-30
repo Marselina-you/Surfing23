@@ -74,7 +74,7 @@
 }
 
 .title {
-  span {
+  div {
     display: inline-block;
     position: relative;
     transform: translateX(-50px);
@@ -87,6 +87,9 @@
       padding-bottom: 80px;
       padding-left: 10px;
     }
+   }
+   span {
+    display: inline-block;
    }
   h3 {
     position: absolute;

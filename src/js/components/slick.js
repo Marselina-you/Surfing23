@@ -167,7 +167,7 @@ $('.menu-btn').on('click', function() {
 });
 
 new WOW.WOW({
-  //live: false
+  live: false//чтобы не было ошибок в консоли
  //и любые другие параметры - это просто пример
 }).init();
 

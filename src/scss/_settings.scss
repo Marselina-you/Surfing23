@@ -8,11 +8,13 @@ html {
   box-sizing: inherit;
 }
 body {
- 
+
   background-color: #171919;
   font-family: var(--font-family, sans-serif);
   color: #fff;
   text-transform: uppercase;
+  min-width: 320px;
+  overflow-x: hidden;
 
 }
 
@@ -30,11 +32,11 @@ body {
   background-color: papayawhip;
 }
 
-img {
+//img {
   //height: auto;
   //max-width: 100%;
   //object-fit: cover;
-}
+//}
 
 a {
   text-decoration: none;

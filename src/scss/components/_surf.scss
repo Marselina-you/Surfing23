@@ -251,6 +251,7 @@
   transform: translateX(-50%);
   border-radius: 6px;
   background: rgba(#0f1010, .7);
+  z-index: 1;
   &::before {
     content: "";
     position: absolute;
