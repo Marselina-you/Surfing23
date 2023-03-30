@@ -92,6 +92,9 @@
       padding: 160px 0 0 0;
 
     }
+    @include small-tablet {
+      padding: 60px 0 0 0;
+    }
   }
   .holder-slider__info {
     display: flex;
@@ -166,4 +169,8 @@
     padding-right: 80px;
     padding-top: 132px;
     text-align: right;
+
+    @include small-tablet {
+      padding: 100px 20px 0 0;
+    }
   }

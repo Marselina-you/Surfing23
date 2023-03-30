@@ -13,6 +13,9 @@
     @include hundred {
       padding-right: 20px;
     }
+    @include small-tablet {
+      padding-bottom: 30px;
+    }
 
   }
 

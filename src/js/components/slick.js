@@ -1,4 +1,6 @@
 import $ from "jquery";
+import WOW from 'wowjs';
+//import wow from "jquery";
 import Dots from "slick-carousel";
 
 $.when( $.ready ).then(function() {
@@ -162,7 +164,12 @@ $.when( $.ready ).then(function() {
 
 $('.menu-btn').on('click', function() {
   $('.menu').toggleClass('active');
-})
+});
+
+new WOW.WOW({
+  //live: false
+ //и любые другие параметры - это просто пример
+}).init();
 
 });
 

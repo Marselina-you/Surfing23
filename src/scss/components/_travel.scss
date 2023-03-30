@@ -58,6 +58,9 @@ background-repeat: no-repeat;
   @include hundred {
     padding: 160px 0 0 0;
   }
+  @include small-tablet {
+    padding: 60px 0 0 0;
+  }
 }
 
     .descr__head {
